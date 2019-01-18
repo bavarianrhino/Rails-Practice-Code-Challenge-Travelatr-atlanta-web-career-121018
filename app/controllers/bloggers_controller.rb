@@ -51,6 +51,13 @@ class BloggersController < ApplicationController
             # <%= f.label :age %>:
             # <%= f.number_field :age %><br />
 
+        #     <%= f.label :name %>:
+        #     <%= f. collection_select(:blogger_id, Blogger.all, :id, :name) %><br />
+        #
+        #     <%= f.label :name %>:
+        #     <%= f.collection_select(:destination_id, Destination.all, :id, :name) %><br />
+
+
             # <%= f.submit %>
         # <% end %>
 

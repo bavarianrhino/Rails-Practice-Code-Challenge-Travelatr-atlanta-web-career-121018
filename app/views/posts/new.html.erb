@@ -1,0 +1,26 @@
+<h1> New Post </h1>
+
+<%= form_for @post do |f| %>
+    <%= f.label :title %>:
+    <%= f.text_area :title %><br />
+
+    <%= f.label :content %>:
+    <%= f.text_field :content %><br />
+
+    <%= f.label :likes %>:
+    <%= f.number_field :likes %><br />
+
+    <%= f.label :name %>:
+    <%= f. collection_select(:blogger_id, Blogger.all, :id, :name) %><br />
+
+    <%= f.label :name %>:
+    <%= f.collection_select(:destination_id, Destination.all, :id, :name) %><br />
+
+  <%= f.submit %>
+<% end %>
+
+<!-- t.string "title"
+t.text "content"
+t.integer "likes"
+t.integer "blogger_id"
+t.integer "destination_id" -->
